@@ -1,0 +1,11 @@
+installed:
+- webpack + babel-loader
+- io to run jest
+- edited jest.js to use nodemon --harmony
+
+- added preprocessor to run jsx files for jest.
+
+todo:
+- flux
+- test stores
+
