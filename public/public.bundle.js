@@ -55,7 +55,7 @@
 	    return React.createElement(
 	      "div",
 	      { className: "main" },
-	      "Hello Momma!"
+	      this.props.text
 	    );
 	  }
 	});

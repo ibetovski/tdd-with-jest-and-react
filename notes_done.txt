@@ -8,4 +8,15 @@ installed:
 todo:
 - flux
 - test stores
+  * include a store
+  * include an action
+  * trigger event
+  * check the data
 
+functional tests plan:
+- include component
+- call component's event with simulate.__EVENT_NAME__
+- check the component's state.
+
+- unmount the component
+- check the listener (is it possible at all?)
