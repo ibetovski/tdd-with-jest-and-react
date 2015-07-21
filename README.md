@@ -22,4 +22,4 @@ All comments, suggestions and critiques are welcome!
 
 21.07.2015
 - Prevent Jest from mocking the reflux. Otherwise every Reflux methond will return undefined.
-- To test Action listeners you should use jest.runAllTimers() because they are async.
+- To test Action listeners you should use jest.runAllTimers() because they are async (Reflux's issue: https://github.com/spoike/refluxjs/issues/218)
