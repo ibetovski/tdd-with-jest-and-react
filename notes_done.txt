@@ -8,10 +8,10 @@ installed:
 todo:
 - flux
 - test stores
-  * include a store
-  * include an action
-  * trigger event
-  * check the data
+  x* include a store
+  x* include an action
+  x* trigger event
+  x* check the data
 
 functional tests plan:
 - include component

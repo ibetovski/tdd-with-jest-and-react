@@ -62,4 +62,12 @@ describe('List', function() {
     jest.runOnlyPendingTimers();
     expect(Store.getItemById(itemId).status).toEqual(0);
   });
+
+  it('should delete item', function() {
+    var count = Store.getItems().length;
+
+    Actions.deleteItem(itemId);
+    jest.runOnlyPendingTimers();
+    expect(Store.getItems().length).toEqual(count - 1);
+  });
 });

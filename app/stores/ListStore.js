@@ -21,6 +21,10 @@ var ListStore = Reflux.createStore({
     }
   },
 
+  getIndexById: function(id) {
+    
+  },
+
   onAddItem: function(item) {
     item.id = generateId();
     item.status = 0;
@@ -34,6 +38,14 @@ var ListStore = Reflux.createStore({
 
   onFlagItemUndone: function(id) {
     this.getItemById(id).status = 0;
+  },
+
+  onDeleteItem: function(id) {
+    for (var i = 0; i <= items.length; i++) {
+      if (items[i].id === id) {
+        items.splice(i, 1);
+      }
+    }
   }
 
 });
