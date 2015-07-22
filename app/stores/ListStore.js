@@ -21,10 +21,6 @@ var ListStore = Reflux.createStore({
     }
   },
 
-  getIndexById: function(id) {
-    
-  },
-
   onAddItem: function(item) {
     item.id = generateId();
     item.status = 0;
