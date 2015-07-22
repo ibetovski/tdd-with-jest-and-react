@@ -44,4 +44,14 @@ describe('Functional List', function() {
     var elements = TestUtils.scryRenderedDOMComponentsWithTag(renderedComponent, 'li');
     expect(elements[0].getDOMNode().textContent).toEqual(Store.getItems()[0].text);
   });
+
+  it('should add new item to the list', function() {
+    var text = 'manamanamana';
+    var count = TestUtils.scryRenderedDOMComponentsWithTag(renderedComponent, 'li').length;
+
+    var input = TestUtils.findRenderedDOMComponentWithTag(renderedComponent, 'input');
+    var submit = TestUtils.findRenderedDOMComponentWithTag(renderedComponent, 'input');
+    TestUtils.Simulate.change(input, { target: { value: text } });
+
+  });
 });
