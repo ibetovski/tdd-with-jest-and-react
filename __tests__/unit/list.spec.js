@@ -1,5 +1,5 @@
-jest.dontMock('../app/actions/ListActions.js');
-jest.dontMock('../app/stores/ListStore.js');
+jest.dontMock('../../app/actions/ListActions.js');
+jest.dontMock('../../app/stores/ListStore.js');
 
 describe('List', function() {
   var React;
@@ -13,8 +13,8 @@ describe('List', function() {
     React = require('react/addons');
     TestUtils = React.addons.TestUtils;
 
-    Actions = require('../app/actions/ListActions.js');
-    Store = require('../app/stores/ListStore.js');
+    Actions = require('../../app/actions/ListActions.js');
+    Store = require('../../app/stores/ListStore.js');
   });
 
   beforeEach(function() {

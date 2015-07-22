@@ -1,6 +1,6 @@
-jest.dontMock('../app/actions/ListActions.js');
-jest.dontMock('../app/stores/ListStore.js');
-jest.dontMock('../app/components/List.js');
+jest.dontMock('../../app/actions/ListActions.js');
+jest.dontMock('../../app/stores/ListStore.js');
+jest.dontMock('../../app/components/List.js');
 
 describe('Functional List', function() {
   var React;
@@ -15,9 +15,9 @@ describe('Functional List', function() {
     React = require('react/addons');
     TestUtils = React.addons.TestUtils;
 
-    // Actions = require('../app/components/List.js');
-    Action = require('../app/actions/ListActions.js');
-    Store = require('../app/stores/ListStore.js');
+    // Actions = require('../../app/components/List.js');
+    Action = require('../../app/actions/ListActions.js');
+    Store = require('../../app/stores/ListStore.js');
 
     Action.addItem({text: 'Item 1' });
     Action.addItem({text: 'Item 2' });
@@ -26,7 +26,7 @@ describe('Functional List', function() {
 
     jest.runAllTimers();
 
-    List = require('../app/components/List.js');
+    List = require('../../app/components/List.js');
   });
 
   beforeEach(function() {
